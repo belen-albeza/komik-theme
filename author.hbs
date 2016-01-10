@@ -1,0 +1,16 @@
+{{!< default}}
+
+{{#author}}
+<article>
+    <header>
+        <p><img src="{{image}}" alt="{{name}}"></p>
+        <h1>{{name}}</h1>
+    </header>
+    {{#if bio}}<p>{{bio}}</p>{{/if}}
+
+    <footer>
+        {{#if location}}<p>{{location}}.</p>{{/if}}
+        {{#if website}}<p><a href="{{website}}">Website</a>.</p>{{/if}}
+    </footer>
+</article>
+{{/author}}

@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p, li, h1, h2, h3 {
+    line-height: 1.25em;
+    margin: 0.5em 0;
+}
+
+main {
+    padding: 1em 1em 2em 1em;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header {
+    text-align: center;
+    padding: 1em;
+    background: #000;
+    color: #fff;
+}
+
+.main-header h1 {
+    margin-top: 0;
+}
+
+.main-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.main-footer {
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1em;
+}
+
+.strip-post {
+    text-align: center;
+}
+
+.strip-post > footer {
+   margin-top: 2em;
+}
+
+.strip-navigation li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.strip {
+    margin: 1em 0 2em 0;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "komik-theme",
+    "description": "Webcomic theme for Ghost",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/belen-albeza/komik-theme.git"
+    },
+    "keywords": [ "ghost", "theme", "blog", "comic", "webcomic" ],
+    "author": "Belén \"Benko\" Albeza",
+    "license": "MIT",
+    "homepage": "https://github.com/belen-albeza/komik-theme#readme",
+    "bugs": {
+        "url": "https://github.com/belen-albeza/komik-theme/issues"
+    },
+    "version": "1.0.0"
+}

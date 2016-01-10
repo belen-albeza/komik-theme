@@ -1,0 +1,23 @@
+<article class="{{post_class}} strip-post">
+    <header>
+        <h1><a href="{{url}}">{{title}}</a></h1>
+        {{> strip-navigation}}
+    </header>
+
+    {{#if image}}
+    <div class="strip">
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    {{/if}}
+
+    {{content}}
+
+    <footer>
+        <p>By {{author}} –
+        Posted on
+           <time datetime="{{date format='YYYY-MM-DD'}}">{{date}}</time>.
+           <a href="{{url}}">Permalink</a>
+        </p>
+        {{> strip-navigation}}
+    </footer>
+</article>

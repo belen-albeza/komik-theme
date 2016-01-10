@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    {{! document settings }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{! page meta}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    {{! feed, styles, etc. }}
+    <link rel="stylesheet" href="{{asset 'css/styles.css'}}" type="text/css">
+    <link rel="alternate" title="RSS" href="{{@blog.url}}/rss/" type="application/rss+xml">
+
+    {{! ghost stuff - dont' remove this }}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <header class="main-header">
+        <div class="page-wrapper">
+            <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+            <p>{{@blog.description}}</p>
+
+            <nav class="main-menu">{{navigation}}</nav>
+        </div><!-- page wrapper -->
+    </header>
+
+    <main>
+        <div class="page-wrapper">
+        {{{body}}}
+        </div><!-- page wrapper -->
+    </main>
+
+    <footer class="main-footer">
+        <div class="page-wrapper">
+            <p><a href="{{@blog.url}}/rss/">Subscribe to RSS<a> updates.</p>
+            <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
+               Powered with <a href="https://www.ghost.org">Ghost</a> and the
+               <a href="https://www.github.com/belen-albeza/komik-theme">Komik</a> theme.
+            </p>
+        </div><!-- page wrapper -->
+    </footer>
+
+    {{! ghost stuff - don't remove this! }}
+    {{ghost_foot}}
+</body>

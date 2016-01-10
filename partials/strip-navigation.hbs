@@ -1,0 +1,6 @@
+<nav class="strip-navigation"><ul>
+    {{#get "posts" limit="1" order="published_at asc"}}{{#foreach posts}}<li><a href="{{url}}">First</a></li>{{/foreach}}{{/get}}
+    {{#prev_post}}<li><a href="{{url}}">Previous</a></li>{{/prev_post}}
+    {{#next_post}}<li><a href="{{url}}">Next</a></li>{{/next_post}}
+    {{#get "posts" limit="1" order="published_at desc"}}{{#foreach posts}}<li><a href="{{url}}">Last</a></li>{{/foreach}}{{/get}}
+</ul></nav>
