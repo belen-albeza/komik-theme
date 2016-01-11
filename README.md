@@ -12,10 +12,10 @@ If you are using [Ghost.org](http://ghost.org)'s Pro platform, follow the instru
 
 If you are using a Ghost installation in your own server, follow these steps.
 
-1. Go to the [releases page](https://github.com/belen-albeza/breathe-theme/releases) and download the latest release.
+1. Go to the [releases page](https://github.com/belen-albeza/komik-theme/releases) and download the latest release.
 2. If you are hosting your own Ghost installation, unzip the tarball file into `content/themes/`.
 3. Restart Node. How you do this will depend on your actual server setup.
-4. Login into your blog, go to `Settings` and pick up `breathe-theme` from the `Theme` dropdown.
+4. Login into your blog, go to `Settings` and pick up `komik-theme` from the `Theme` dropdown.
 
 ## Configuration
 
