@@ -1,12 +1,12 @@
 {{!< default}}
 
 {{#author}}
-<article>
+<article class="page">
     <header>
-        <p><img src="{{image}}" alt="{{name}}"></p>
+        <p><img src="{{image}}" alt="{{name}}" width="100" class="avatar"></p>
         <h1>{{name}}</h1>
     </header>
-    {{#if bio}}<p>{{bio}}</p>{{/if}}
+    {{#if bio}}<p class="readable">{{bio}}</p>{{/if}}
 
     <footer>
         {{#if location}}<p>{{location}}.</p>{{/if}}

@@ -1,6 +1,22 @@
 <nav class="strip-navigation"><ul>
-    {{#get "posts" limit="1" order="published_at asc"}}{{#foreach posts}}<li><a href="{{url}}">First</a></li>{{/foreach}}{{/get}}
-    {{#prev_post}}<li><a href="{{url}}">Previous</a></li>{{/prev_post}}
-    {{#next_post}}<li><a href="{{url}}">Next</a></li>{{/next_post}}
-    {{#get "posts" limit="1" order="published_at desc"}}{{#foreach posts}}<li><a href="{{url}}">Last</a></li>{{/foreach}}{{/get}}
+    {{! first strip }}
+    {{#get "posts" limit="1" order="published_at asc"}}{{#foreach posts}}<li><a href="{{url}}">
+        <img src="{{asset 'images/open-iconic/media-step-backward.svg'}}" alt="First" width="32">
+    </a></li>{{/foreach}}{{/get}}
+
+    {{! previous and next }}
+    {{#prev_post}}<li><a href="{{url}}">
+        <img src="{{asset 'images/open-iconic/media-skip-backward.svg'}}" alt="Previous" width="32">
+    </a></li>{{/prev_post}}
+
+    <li><a href="{{url}}" class="permalink">Permalink</a></li>
+
+    {{#next_post}}<li><a href="{{url}}">
+        <img src="{{asset 'images/open-iconic/media-skip-forward.svg'}}" alt="Next" width="32">
+    </a></li>{{/next_post}}
+
+    {{! latest strip}}
+    {{#get "posts" limit="1" order="published_at desc"}}{{#foreach posts}}<li><a href="{{url}}">
+        <img src="{{asset 'images/open-iconic/media-step-forward.svg'}}" alt="Latest" width="32">
+    </a></li>{{/foreach}}{{/get}}
 </ul></nav>

@@ -22,9 +22,10 @@
             <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
             <p>{{@blog.description}}</p>
 
-            <nav class="main-menu">{{navigation}}</nav>
         </div><!-- page wrapper -->
     </header>
+
+    <nav class="main-menu">{{navigation}}</nav>
 
     <main>
         <div class="page-wrapper">
@@ -34,7 +35,7 @@
 
     <footer class="main-footer">
         <div class="page-wrapper">
-            <p><a href="{{@blog.url}}/rss/">Subscribe to RSS<a> updates.</p>
+            <p><a href="{{@blog.url}}/rss/">Subscribe to RSS</a> updates.</p>
             <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
                Powered with <a href="https://www.ghost.org">Ghost</a> and the
                <a href="https://www.github.com/belen-albeza/komik-theme">Komik</a> theme.

@@ -1,11 +1,15 @@
 {{!< default}}
 
 {{#post}}
-<article>
+<article class="page">
     <header>
-        <h1><a href="{{url}}">{{title}}</a></h1>
+        <h1>{{title}}</a></h1>
     </header>
 
+    <div class="readable">
     {{content}}
+    </div>
+
+    <footer><p><a href="{{url}}">Permalink</a></footer>
 </article>
 {{/post}}
