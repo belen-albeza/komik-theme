@@ -1,2 +1,34 @@
-# komik-theme
-Webcomic theme for Ghost
+# Komik
+
+**Komik** is a webcomic theme for the Ghost blogging platform.
+
+[<img src="/screenshot.png?raw=true" width="400">](/screenshot.png?raw=true)
+
+## Installation
+
+This theme works with **Ghost 0.7.4** or newer. You also need to **enable the [Public Beta API](http://support.ghost.org/public-api-beta/)**. This is a checkbox at the bottom of your blog's `Settings` page.
+
+If you are using [Ghost.org](http://ghost.org)'s Pro platform, follow the instructions at [the Ghost support page](http://support.ghost.org/upload-theme-ghostpro/).
+
+If you are using a Ghost installation in your own server, follow these steps.
+
+1. Go to the [releases page](https://github.com/belen-albeza/breathe-theme/releases) and download the latest release.
+2. If you are hosting your own Ghost installation, unzip the tarball file into `content/themes/`.
+3. Restart Node. How you do this will depend on your actual server setup.
+4. Login into your blog, go to `Settings` and pick up `breathe-theme` from the `Theme` dropdown.
+
+## Configuration
+
+This theme ignores the following:
+
+- The "post per page" setting. It will only display one strip at a time in the main page.
+- Tags will not be displayed.
+- Featured post will not have a special treatment.
+
+
+Right not there is nothing to configure, besides what you can normally do.
+
+## Changelog
+
+- **1.0.0**
+    - First version
