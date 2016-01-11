@@ -17,6 +17,12 @@ If you are using a Ghost installation in your own server, follow these steps.
 3. Restart Node. How you do this will depend on your actual server setup.
 4. Login into your blog, go to `Settings` and pick up `komik-theme` from the `Theme` dropdown.
 
+## How to use
+
+This theme assumes that you create a new post per comic strip / page. You also **must use the `featured image`** setting in your post to upload your picture. You get to this setting by clicking the "gear" icon while editing a post. See this picture:
+
+![Featured image setting](/howto.png?raw=true)
+
 ## Configuration
 
 This theme ignores the following:
@@ -24,6 +30,7 @@ This theme ignores the following:
 - The "post per page" setting. It will only display one strip at a time in the main page.
 - Tags will not be displayed.
 - Featured post will not have a special treatment.
+- Blog cover and blog logo (_might_ be taken into account in future releases)
 
 
 Right not there is nothing to configure, besides what you can normally do.
