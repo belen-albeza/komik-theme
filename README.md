@@ -37,5 +37,7 @@ Right not there is nothing to configure, besides what you can normally do.
 
 ## Changelog
 
+- **1.0.1**
+    - Fixed broken layout on mobile devices
 - **1.0.0**
     - First version
