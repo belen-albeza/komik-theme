@@ -50,6 +50,8 @@ Right not there is nothing to configure, besides what you can normally do.
 
 ## Changelog
 
+- **1.1.1**
+    - Fixed wrong order in the archive list.
 - **1.1**
     - Added a page template that outputs the archive of comics
 - **1.0.1**

@@ -8,7 +8,7 @@
 
     <div class="readable">
     {{content}}
-    {{#get "posts" include="title,url,published_at"}}
+    {{#get "posts" include="title,url,published_at" order="reverse"}}
     <nav class="archive-list"><ol>
         {{#foreach posts}}
         <li>
