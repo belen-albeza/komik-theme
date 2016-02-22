@@ -9,14 +9,14 @@
     <div class="readable">
     {{content}}
     {{#get "posts" include="title,url,published_at"}}
-    <nav class="archive-list"><ul>
+    <nav class="archive-list"><ol>
         {{#foreach posts}}
         <li>
             <a href="{{url}}">{{title}}</a>
             <timestamp datetime="{{date format='YYYY-MM-DD'}}">{{date}}</timestamp>
         </li>
         {{/foreach}}
-    </ul></nav>
+    </ol></nav>
     {{/get}}
     </div>
 
