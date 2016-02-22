@@ -19,9 +19,23 @@ If you are using a Ghost installation in your own server, follow these steps.
 
 ## How to use
 
+### Publish comics
+
 This theme assumes that you create a new post per comic strip / page. You also **must use the `featured image`** setting in your post to upload your picture. You get to this setting by clicking the "gear" icon while editing a post. See this picture:
 
 ![Featured image setting](/howto.png?raw=true)
+
+### Create an archive
+
+This themes can show an **archive** with a list of all the comics that have been published.
+
+To do that, you just need to [create a static page](http://support.ghost.org/publish-a-static-page/) and **set `comic-archive` as its slug** (the `Post URL` field).
+
+![Archive settings](/howto_archive.png?raw=true)
+
+In order for this archive page to show up in the menu, you need to [add it to the navigation menu](http://support.ghost.org/add-navigation-menu-ghost-blog/). The URL will be `http://yourdomain.com/comic-archive`. As the title for that menu item you can put whatever you like! Here `Archive` has been used.
+
+![Navigation settings](/howto_navigation.png?raw=true)
 
 ## Configuration
 
@@ -32,11 +46,12 @@ This theme ignores the following:
 - Featured post will not have a special treatment.
 - Blog cover and blog logo (_might_ be taken into account in future releases)
 
-
 Right not there is nothing to configure, besides what you can normally do.
 
 ## Changelog
 
+- **1.1**
+    - Added a page template that outputs the archive of comics
 - **1.0.1**
     - Fixed broken layout on mobile devices
 - **1.0.0**
