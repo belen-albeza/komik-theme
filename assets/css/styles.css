@@ -168,11 +168,15 @@ main {
 }
 
 
-article.page > header, article.page > footer {
+.page > header, .page > footer {
     text-align: center;
 }
 
-article.page {
+.page > footer {
+    margin-top: 2em;
+}
+
+.page {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -180,4 +184,39 @@ article.page {
 
 .avatar {
     border-radius: 100%;
+}
+
+/*
+archive page style
+*/
+
+@counter-style hash-number {
+    prefix: '#';
+    system: extends decimal;
+    suffix: ' ';
+}
+
+.archive-list {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Indie Flower', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+@media screen and (max-device-width:449px) {
+    .archive-list ul {
+        padding-left: 2em;
+    }
+}
+
+
+.archive-list li {
+    list-style: hash-number;
+}
+
+.archive-list timestamp {
+    color: #999;
+    text-transform: uppercase;
+    font-size: 0.8em;
 }
